@@ -1,0 +1,9 @@
+server {
+   listen 80 default_server;
+   root /home/ariel/Documents/trabajos/leo/orbita-admin/build;
+   index index.html index.htm;
+   location / {
+   try_files $uri /index.html =404;
+   }
+}
+
